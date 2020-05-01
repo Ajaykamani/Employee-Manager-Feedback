@@ -1,6 +1,7 @@
 package com.cts.catalogueService.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -54,6 +55,7 @@ public class CatalogueController {
 		review.setRating(delivarableData.getRating());
 		review.setReview(delivarableData.getReview());
 		this.managerProxy.updateReview(review);
+		//this.restTemplate.exchange("http://localhost:8765/manager-service", HttpMethod.PUT, review,null);
 		
 		DelivarableStatus status = new DelivarableStatus();
 		status.setDelivarableId(delivarableData.getDelivarableId());
@@ -62,6 +64,7 @@ public class CatalogueController {
 		status.setRemarks(delivarableData.getRemarks());
 		this.empProxy.updatedelivarableReviewStatus(status);
 		return true;
+		//this.restTemplate.exchange("http://localhost:8765/manager-service", HttpMethod.PUT, review,null);
 		
 	}
 	
