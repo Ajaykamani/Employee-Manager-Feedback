@@ -8,26 +8,21 @@ import org.slf4j.LoggerFactory;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
-
-// Registers this class as Zuul Filter
-// ZullFilter is an abstract class
-// a Zuul filter have object access similar to Servlet
 public class LoggingFilter extends ZuulFilter{
 
 	private Logger logger  = LoggerFactory.getLogger(this.getClass());
 	
 	@Override
 	public boolean shouldFilter() {
-		// TODO Auto-generated method stub
-		// true : this filter is active
-		// false : inactive
 		return true;
 	}
+	
+	//if the above method shouldFilter() return true then it invokes the run() method
 
 	@Override
 	public Object run() throws ZuulException {
-		// TODO Auto-generated method stub
-		// filter logic goes here
+		//httpserveletrequest contains the get post ... service methods
+		//request context contains the state,request , responce and data for zuul filter to share and access
 		HttpServletRequest request = RequestContext.getCurrentContext().getRequest();
 		this.logger.info("Zuul Intercepts : " + request.getRequestURL());
 		return null;
@@ -35,16 +30,11 @@ public class LoggingFilter extends ZuulFilter{
 
 	@Override
 	public String filterType() {
-		// TODO Auto-generated method stub
-		// pre : will intercept the incoming request
-		// post : will intercept outgoing response
 		return "pre";
 	}
 
 	@Override
 	public int filterOrder() {
-		// TODO Auto-generated method stub
-		// lower value will have higher priority
 		return 0;
 	}
 

@@ -30,8 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		.and()
 			.csrf().disable() 
 			.authorizeRequests()
-			.antMatchers("/employee-service/login").hasAnyRole("EMPLOYEE","MANAGER")
-			
+				.antMatchers("/employee-service/login").hasAnyRole("MANAGER","EMPLOYEE")
 			.and()
 				.httpBasic();		
 	}

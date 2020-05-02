@@ -1,8 +1,9 @@
 package com.cts.catalogueService.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpMethod;
+
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,7 +18,13 @@ import com.cts.catalogueService.model.DelivarableStatus;
 import com.cts.catalogueService.model.RatingDataModel;
 import com.cts.catalogueService.model.ReviewDataModel;
 
+import io.swagger.annotations.Api;
+
+
+
+@ControllerAdvice
 @RestController
+@Api
 public class CatalogueController {
 	
 	@Autowired

@@ -7,10 +7,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.cts.catalogueService.model.DelivarableStatus;
 
-
-
-
-
 @FeignClient(name ="api-gateway",url = "http://localhost:8765/")
 @RibbonClient(name ="employee-service")
 public interface EmployeeFeignProxy {
