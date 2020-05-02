@@ -87,4 +87,13 @@ public class EmployeeServiceImpl implements EmployeeService {
 		
 	}
 
+
+	@Override
+	public ResponseEntity<List<Delivarable>> getDelivarablesByEmployeeId(Integer employeeId) {
+		// TODO Auto-generated method stub
+		List<Delivarable> list = this.delivarableRepository.findByemployeeId(employeeId);
+		ResponseEntity<List<Delivarable>> result  = new  ResponseEntity<List<Delivarable>>(list,HttpStatus.OK);
+		return result;
+	}
+
 }
