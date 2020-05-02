@@ -19,7 +19,7 @@ import lombok.Setter;
 public class RatingData {
 	
 	@Id
-	@Column
+	@Column(insertable = true)
 	private Integer delivarableId;
 	
 	@Column

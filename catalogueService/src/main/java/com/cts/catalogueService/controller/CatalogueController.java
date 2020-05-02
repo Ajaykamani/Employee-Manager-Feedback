@@ -1,7 +1,7 @@
 package com.cts.catalogueService.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -35,14 +35,16 @@ public class CatalogueController {
 		rating.setDelivarableId(delivarableData.getDelivarableId());
 		rating.setEmployeeId(delivarableData.getEmployeeId());
 		rating.setRating(delivarableData.getRating());
-		this.managerProxy.saveRating(rating);
+		//this.managerProxy.saveRating(rating);
+		this.restTemplate.postForObject("http://localhost:8765/manager-service/saveRating", rating, RatingDataModel.class);
 		
 		DelivarableStatus status = new DelivarableStatus();
 		status.setDelivarableId(delivarableData.getDelivarableId());
 		status.setEmployeeId(delivarableData.getEmployeeId());
 		status.setProjectname(delivarableData.getProjectname());
 		status.setRemarks(delivarableData.getRemarks());
-		this.empProxy.updatedelivarableRatingStatus(status);
+		//this.empProxy.updatedelivarableRatingStatus(status);
+		this.restTemplate.put("http://localhost:8765/employee-service/updateRatingStatus", status);
 		return true;
 		
 	}
@@ -54,7 +56,8 @@ public class CatalogueController {
 		review.setEmployeeId(delivarableData.getEmployeeId());
 		review.setRating(delivarableData.getRating());
 		review.setReview(delivarableData.getReview());
-		this.managerProxy.updateReview(review);
+		//this.managerProxy.updateReview(review);
+		this.restTemplate.put("http://localhost:8765/manager-service/updateReview", review);
 		//this.restTemplate.exchange("http://localhost:8765/manager-service", HttpMethod.PUT, review,null);
 		
 		DelivarableStatus status = new DelivarableStatus();
@@ -62,7 +65,8 @@ public class CatalogueController {
 		status.setEmployeeId(delivarableData.getEmployeeId());
 		status.setProjectname(delivarableData.getProjectname());
 		status.setRemarks(delivarableData.getRemarks());
-		this.empProxy.updatedelivarableReviewStatus(status);
+		//this.empProxy.updatedelivarableReviewStatus(status);
+		this.restTemplate.put("http://localhost:8765/employee-service/updateReviewStatus", status);
 		return true;
 		//this.restTemplate.exchange("http://localhost:8765/manager-service", HttpMethod.PUT, review,null);
 		
