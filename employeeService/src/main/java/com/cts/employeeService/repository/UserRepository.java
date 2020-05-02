@@ -11,6 +11,7 @@ import com.cts.employeeService.entityClass.User;
 public interface UserRepository extends JpaRepository<User, Integer> {
 	
 	List<User> findByuserName(String username);
+	List<User> findBymanagerId(Integer managerId);
 
 }
 

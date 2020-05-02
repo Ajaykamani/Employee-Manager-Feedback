@@ -74,10 +74,18 @@ public class CatalogueController {
 	
 	// retrieve all the employees of a manager
 	@GetMapping("/getDelivarables/{managerId}")
-	public ResponseEntity<DelivarableData> getDelivarables(@PathVariable Integer managerId){
-		
+	public ResponseEntity<DelivarableData> getDelivarablesBymanagerId(@PathVariable Integer managerId){
+			
 		
 		return null;
-		
 	}
+	
+	@GetMapping("/getDelivarables/{employeeId}")
+	public ResponseEntity<DelivarableData> getDelivarablesbyEmployeeId(@PathVariable Integer managerId){
+			
+		
+		return null;
+	}
+	
+	
 }
