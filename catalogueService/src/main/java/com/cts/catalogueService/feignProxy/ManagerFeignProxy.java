@@ -13,6 +13,7 @@ import com.cts.catalogueService.model.ReviewDataModel;
 @FeignClient(name ="api-gateway",url = "http://localhost:8765/")
 @RibbonClient(name ="manager-service")
 public interface ManagerFeignProxy {
+	
 	@PostMapping("/saveRating")
 	public void saveRating(@RequestBody RatingDataModel dataModel);
 	
