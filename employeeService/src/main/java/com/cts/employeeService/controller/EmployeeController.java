@@ -35,7 +35,7 @@ public class EmployeeController {
 	@PostMapping("/saveDelivarable")
 	public void saveDelivarable(@RequestBody DelivarableModel delivarableModel ) {
 		
-		logger.info("In Controller ----> "+delivarableModel.getEmployeeId());
+		//logger.info("In Controller ----> "+delivarableModel.getEmployeeId());
 		
 		this.employeeService.saveDelivarable(delivarableModel);
 		

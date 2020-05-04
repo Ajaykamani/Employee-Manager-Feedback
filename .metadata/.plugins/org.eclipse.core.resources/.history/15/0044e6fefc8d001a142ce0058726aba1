@@ -1,0 +1,5 @@
+package com.cts.catalogueService.model;
+
+public class DelivarableResponse {
+
+}

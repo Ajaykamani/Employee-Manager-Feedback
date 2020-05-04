@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="EmployeeServiceApplicationTests" project="employeeService" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.cts.employeeService.EmployeeServiceApplicationTests" time="0.253" displayname="EmployeeServiceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.cts.employeeService.EmployeeServiceApplicationTests]">
-    <testcase name="contextLoads" classname="com.cts.employeeService.EmployeeServiceApplicationTests" time="0.253" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.cts.employeeService.EmployeeServiceApplicationTests]/[method:contextLoads()]"/>
-  </testsuite>
-</testrun>

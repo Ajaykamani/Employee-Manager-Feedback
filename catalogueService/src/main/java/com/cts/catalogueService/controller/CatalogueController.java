@@ -1,5 +1,7 @@
 package com.cts.catalogueService.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.http.ResponseEntity;
@@ -13,6 +15,7 @@ import org.springframework.web.client.RestTemplate;
 
 import com.cts.catalogueService.feignProxy.EmployeeFeignProxy;
 import com.cts.catalogueService.feignProxy.ManagerFeignProxy;
+import com.cts.catalogueService.model.Delivarable;
 import com.cts.catalogueService.model.DelivarableData;
 import com.cts.catalogueService.model.DelivarableStatus;
 import com.cts.catalogueService.model.RatingDataModel;
@@ -87,10 +90,11 @@ public class CatalogueController {
 		return null;
 	}
 	
+	//retrieve all delivarables of an employee
 	@GetMapping("/getDelivarables/{employeeId}")
-	public ResponseEntity<DelivarableData> getDelivarablesbyEmployeeId(@PathVariable Integer managerId){
-			
-		
+	public ResponseEntity<DelivarableData> getDelivarablesbyEmployeeId(@PathVariable Integer employeeId){
+		List<Delivarable> list = this.empProxy.getDelivarablesByEmployeeId(employeeId).getBody();
+		list.stream();
 		return null;
 	}
 	
