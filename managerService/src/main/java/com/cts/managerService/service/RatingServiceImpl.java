@@ -13,6 +13,9 @@ import com.cts.managerService.modelClass.ReviewDataModel;
 import com.cts.managerService.repository.CustomRatingrepository;
 import com.cts.managerService.repository.RatingRepository;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Service
 public class RatingServiceImpl implements RatingService {
 	
@@ -21,6 +24,8 @@ public class RatingServiceImpl implements RatingService {
 	
 	@Autowired
 	private CustomRatingrepository customRepo;
+	
+	
 	
 	
 	@Override
@@ -52,15 +57,20 @@ public class RatingServiceImpl implements RatingService {
 	public ResponseEntity<RatingData> getBydelivarableId(Integer delivarableId) {
 		// TODO Auto-generated method stub
 		RatingData data  = this.ratingRepository.findBydelivarableId(delivarableId);
+		log.info(data.toString());
+		log.info(data.getDelivarableId()+"");
+		log.info(data.getEmployeeId()+"");
+		log.info(data.getReview());
+		log.info(data.getRating()+"");
 		ResponseEntity<RatingData> result = new ResponseEntity<RatingData>(data,HttpStatus.OK);
 		return result;
 	}
 
 	@Override
-	public ResponseEntity<List<RatingData>> getRatingsByOrder(Integer employeeId) {
+	public ResponseEntity<List<Integer>> getRatingsByOrder(Integer employeeId) {
 		// TODO Auto-generated method stub
-		List<RatingData> list = this.customRepo.getRatingsByOrder(employeeId);
-		ResponseEntity<List<RatingData>> result = new ResponseEntity<List<RatingData>>(list,HttpStatus.OK);
+		List<Integer> list = this.customRepo.getRatingsByOrder(employeeId);
+		ResponseEntity<List<Integer>> result = new ResponseEntity<List<Integer>>(list,HttpStatus.OK);
 		return result;
 	}
 

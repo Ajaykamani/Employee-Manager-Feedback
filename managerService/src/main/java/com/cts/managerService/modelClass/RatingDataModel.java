@@ -9,6 +9,7 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class RatingDataModel {
 	
 	private Integer delivarableId;
@@ -16,4 +17,5 @@ public class RatingDataModel {
 	private Integer employeeId;
 	
 	private Integer rating;
+	
 }

@@ -15,5 +15,5 @@ public interface RatingService {
 	public void saveRating(RatingDataModel dataModel);
 	public void updateRating(ReviewDataModel dataModel);
 	public ResponseEntity<RatingData> getBydelivarableId(Integer delivarableId);
-	public ResponseEntity<List<RatingData>> getRatingsByOrder(Integer employeeId);
+	public ResponseEntity<List<Integer>> getRatingsByOrder(Integer employeeId);
 }

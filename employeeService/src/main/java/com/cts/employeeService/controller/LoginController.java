@@ -9,13 +9,14 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cts.employeeService.entityClass.User;
 import com.cts.employeeService.modelClass.ResponseData;
 import com.cts.employeeService.repository.UserRepository;
-
+@ControllerAdvice
 @RestController
 public class LoginController {
 	
