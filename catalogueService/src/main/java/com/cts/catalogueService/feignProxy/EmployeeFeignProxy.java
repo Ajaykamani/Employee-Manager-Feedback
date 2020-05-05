@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import com.cts.catalogueService.model.DelivarableStatus;
+import com.cts.catalogueService.model.User;
 import com.cts.catalogueService.model.Delivarable;
 
 @FeignClient(name ="api-gateway",url = "http://localhost:8765/")
@@ -21,10 +22,9 @@ public interface EmployeeFeignProxy {
 	@PutMapping("/updateReviewStatus")
 	public void updatedelivarableReviewStatus(@RequestBody DelivarableStatus delivarableStatus);
 	
-	@GetMapping("/employeeIds/{managerId}")
-	public ResponseEntity<List<Integer>> getEmployeeIdsBymanagerId(@PathVariable Integer managerId);
-	
 	@GetMapping("/getDelivarables/{employeeId}")
 	public ResponseEntity<List<Delivarable>> getDelivarablesByEmployeeId(@PathVariable Integer employeeId);
 	
+	@GetMapping("/userDetails/{employeeId}/{managerId}")
+	public ResponseEntity<User> getDetailsByEmployeeIdAndBymanagerId(@PathVariable Integer employeeId,@PathVariable Integer managerId);
 }

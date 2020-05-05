@@ -1,9 +1,10 @@
 package com.cts.catalogueService.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,9 +18,13 @@ import com.cts.catalogueService.feignProxy.EmployeeFeignProxy;
 import com.cts.catalogueService.feignProxy.ManagerFeignProxy;
 import com.cts.catalogueService.model.Delivarable;
 import com.cts.catalogueService.model.DelivarableData;
+import com.cts.catalogueService.model.DelivarableResponse;
 import com.cts.catalogueService.model.DelivarableStatus;
+import com.cts.catalogueService.model.RatingData;
 import com.cts.catalogueService.model.RatingDataModel;
 import com.cts.catalogueService.model.ReviewDataModel;
+import com.cts.catalogueService.model.User;
+import com.cts.catalogueService.model.UserDetails;
 
 import io.swagger.annotations.Api;
 
@@ -83,19 +88,45 @@ public class CatalogueController {
 	}
 	
 	// retrieve all the employees of a manager
-	@GetMapping("/getDelivarables/{managerId}")
-	public ResponseEntity<DelivarableData> getDelivarablesBymanagerId(@PathVariable Integer managerId){
-			
-		
-		return null;
+	@GetMapping("/getDelivarablesOrder/{managerId}")
+	public ResponseEntity<List<UserDetails>> getDelivarablesBymanagerId(@PathVariable Integer managerId){
+			List<Integer> list = this.managerProxy.getRatingsByOrder().getBody();
+			List<UserDetails> data = new ArrayList<UserDetails>();
+			list.stream().forEach(id->{
+				UserDetails userData = new UserDetails();
+				User user = this.empProxy.getDetailsByEmployeeIdAndBymanagerId(id, managerId).getBody();
+				userData.setUserId(user.getUserId());
+				userData.setUserName(user.getUserName());
+				userData.setRole(user.getRole());
+				userData.setManagerId(user.getManagerId());
+				data.add(userData);
+			});
+			ResponseEntity<List<UserDetails>> result = new ResponseEntity<List<UserDetails>>(data,HttpStatus.OK);
+			return result;
 	}
 	
 	//retrieve all delivarables of an employee
 	@GetMapping("/getDelivarables/{employeeId}")
-	public ResponseEntity<DelivarableData> getDelivarablesbyEmployeeId(@PathVariable Integer employeeId){
+	public ResponseEntity<List<DelivarableResponse>> getDelivarablesbyEmployeeId(@PathVariable Integer employeeId){
 		List<Delivarable> list = this.empProxy.getDelivarablesByEmployeeId(employeeId).getBody();
-		list.stream();
-		return null;
+		List<DelivarableResponse> response = new ArrayList<DelivarableResponse>();
+		list.stream().forEach(delivarable->{
+			//delivarableId, employeeId, pojectName, remarks, rated, reviewed, rating, review
+			DelivarableResponse data = new DelivarableResponse();
+			data.setDelivarableId(delivarable.getId());
+			data.setEmployeeId(delivarable.getEmployeeId());
+			data.setPojectName(delivarable.getPojectName());
+			data.setRemarks(delivarable.getRemarks());
+			data.setRated(delivarable.getRated());
+			data.setReviewed(delivarable.getReviewed());
+			RatingData rating = this.managerProxy.getRatingByDelivarableId(delivarable.getId()).getBody();
+			data.setRating(rating.getRating());
+			data.setReview(rating.getReview());
+			response.add(data);
+		});
+		ResponseEntity<List<DelivarableResponse>> result = new ResponseEntity<List<DelivarableResponse>>(response,HttpStatus.OK);
+		
+		return result;
 	}
 	
 	
