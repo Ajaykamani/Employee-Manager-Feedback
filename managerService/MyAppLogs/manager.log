@@ -4558,3 +4558,17 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 2020-05-06 15:22:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 2020-05-06 15:27:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 2020-05-06 15:32:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-06 15:37:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-06 15:42:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-06 15:45:19 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2020-05-06 15:45:19 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MANAGER-SERVICE with eureka with status DOWN
+2020-05-06 15:45:19 [RMI TCP Connection(2)-127.0.0.1] WARN  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1588760119625, current=DOWN, previous=UP]
+2020-05-06 15:45:19 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568: registering service...
+2020-05-06 15:45:19 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568 - registration status: 204
+2020-05-06 15:45:19 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-06 15:45:19 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-06 15:45:20 [RMI TCP Connection(2)-127.0.0.1] TRACE o.h.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@25b21f93] for TypeConfiguration
+2020-05-06 15:45:20 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.h.type.spi.TypeConfiguration$Scope - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@18373d5a] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@25b21f93]
+2020-05-06 15:45:20 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2020-05-06 15:45:20 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2020-05-06 15:45:20 [RMI TCP Connection(2)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
