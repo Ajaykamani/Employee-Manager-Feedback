@@ -34,24 +34,24 @@ public class EmployeeController {
 	
 	
 	@PostMapping("/saveDelivarable")
-	public void saveDelivarable(@RequestBody DelivarableModel delivarableModel ) {
+	public Delivarable saveDelivarable(@RequestBody DelivarableModel delivarableModel ) {
 		
 		//logger.info("In Controller ----> "+delivarableModel.getEmployeeId());
 		
-		this.employeeService.saveDelivarable(delivarableModel);
+		return this.employeeService.saveDelivarable(delivarableModel);
 		
 	}
 	
 	@PutMapping("/updateRatingStatus")
-	public void updatedelivarableRatingStatus(@RequestBody DelivarableStatus delivarableStatus) {
+	public Delivarable updatedelivarableRatingStatus(@RequestBody DelivarableStatus delivarableStatus) {
 		
-		this.employeeService.updateDelivarableRatingStatus(delivarableStatus);
+		return this.employeeService.updateDelivarableRatingStatus(delivarableStatus);
 	}
 	
 	@PutMapping("/updateReviewStatus")
-	public void updatedelivarableReviewStatus(@RequestBody DelivarableStatus delivarableStatus) {
+	public Delivarable updatedelivarableReviewStatus(@RequestBody DelivarableStatus delivarableStatus) {
 		
-		this.employeeService.updateDelivarableReviewStatus(delivarableStatus);
+		return this.employeeService.updateDelivarableReviewStatus(delivarableStatus);
 	}
 	
 	@GetMapping("/employeeIds/{managerId}")

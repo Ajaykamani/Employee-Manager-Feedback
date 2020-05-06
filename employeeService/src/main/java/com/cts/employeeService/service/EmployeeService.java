@@ -12,9 +12,9 @@ import com.cts.employeeService.modelClass.DelivarableStatus;
 
 @Service
 public interface EmployeeService {
-	public void saveDelivarable(DelivarableModel delivarableModel);
-	public void updateDelivarableRatingStatus(DelivarableStatus delivarableStatus);
-	public void updateDelivarableReviewStatus(DelivarableStatus delivarableStatus);
+	public Delivarable saveDelivarable(DelivarableModel delivarableModel);
+	public Delivarable updateDelivarableRatingStatus(DelivarableStatus delivarableStatus);
+	public Delivarable updateDelivarableReviewStatus(DelivarableStatus delivarableStatus);
 	public ResponseEntity<List<Integer>> getEmployeeIds(Integer managerId);
 	public ResponseEntity<List<Delivarable>> getDelivarablesByEmployeeId(Integer employeeId);
 }

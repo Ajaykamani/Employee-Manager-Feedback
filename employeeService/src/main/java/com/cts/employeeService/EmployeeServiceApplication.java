@@ -28,7 +28,7 @@ public class EmployeeServiceApplication {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
 				.paths(PathSelectors.any())
-				.apis(RequestHandlerSelectors.basePackage("com.cts"))
+				.apis(RequestHandlerSelectors.basePackage("com.cts.employeeService"))
 				.build()
 				.apiInfo(apiInfo());
 	}

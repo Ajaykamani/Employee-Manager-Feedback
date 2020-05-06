@@ -10,4 +10,6 @@
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
 <fullyQualifiedTypeName name="org.mockito.InjectMocks"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.cts.catalogueService.model.Delivarable"/>
 </qualifiedTypeNameHistroy>

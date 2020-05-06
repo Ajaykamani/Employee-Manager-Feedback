@@ -17,10 +17,10 @@ import com.cts.catalogueService.model.Delivarable;
 public interface EmployeeFeignProxy {
 	
 	@PutMapping("/updateRatingStatus")
-	public void updatedelivarableRatingStatus(@RequestBody DelivarableStatus delivarableStatus);
+	public Delivarable updatedelivarableRatingStatus(@RequestBody DelivarableStatus delivarableStatus);
 	
 	@PutMapping("/updateReviewStatus")
-	public void updatedelivarableReviewStatus(@RequestBody DelivarableStatus delivarableStatus);
+	public Delivarable updatedelivarableReviewStatus(@RequestBody DelivarableStatus delivarableStatus);
 	
 	@GetMapping("/getDelivarables/{employeeId}")
 	public ResponseEntity<List<Delivarable>> getDelivarablesByEmployeeId(@PathVariable Integer employeeId);

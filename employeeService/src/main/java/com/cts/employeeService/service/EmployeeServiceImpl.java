@@ -30,7 +30,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	private org.slf4j.Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	@Override
-	public void saveDelivarable(DelivarableModel delivarableModel) {
+	public Delivarable saveDelivarable(DelivarableModel delivarableModel) {
 		
 		Delivarable data = new Delivarable();
 		data.setEmployeeId(delivarableModel.getEmployeeId());
@@ -40,13 +40,13 @@ public class EmployeeServiceImpl implements EmployeeService {
 		data.setRated(false);
 		data.setReviewed(false);
 		
-		this.delivarableRepository.save(data); 
+		return this.delivarableRepository.save(data); 
 
 	}
 
 
 	@Override
-	public void updateDelivarableRatingStatus(DelivarableStatus delivarableStatus) {
+	public Delivarable updateDelivarableRatingStatus(DelivarableStatus delivarableStatus) {
 		// TODO Auto-generated method stub
 		Delivarable data = new Delivarable();
 		data.setId(delivarableStatus.getDelivarableId());
@@ -56,12 +56,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 		data.setRated(true);
 		data.setReviewed(false);
 		
-		this.delivarableRepository.save(data);
+		return this.delivarableRepository.save(data);
 	}
 
 
 	@Override
-	public void updateDelivarableReviewStatus(DelivarableStatus delivarableStatus) {
+	public Delivarable updateDelivarableReviewStatus(DelivarableStatus delivarableStatus) {
 		// TODO Auto-generated method stub
 		Delivarable data = new Delivarable();
 		data.setId(delivarableStatus.getDelivarableId());
@@ -71,7 +71,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		data.setRated(true);
 		data.setReviewed(true);
 		
-		this.delivarableRepository.save(data);
+		return this.delivarableRepository.save(data);
 	}
 	
 	@Override

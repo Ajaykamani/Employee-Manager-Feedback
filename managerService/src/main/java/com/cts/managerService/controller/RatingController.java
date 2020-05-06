@@ -51,15 +51,15 @@ public class RatingController {
     }
 	
     @PostMapping("/saveRating")
-	public void saveRating(@RequestBody RatingDataModel dataModel) {
+	public RatingData saveRating(@RequestBody RatingDataModel dataModel) {
 		
-		this.ratingService.saveRating(dataModel);
+		return this.ratingService.saveRating(dataModel);
 	}
 	
 	@PutMapping("/updateReview")
-	public void updateReview(@RequestBody ReviewDataModel dataModel) {
+	public RatingData updateReview(@RequestBody ReviewDataModel dataModel) {
 		
-		this.ratingService.updateRating(dataModel);
+		return this.ratingService.updateRating(dataModel);
 	}
 	
 	@GetMapping("/getRating/{delivarableId}")
@@ -67,9 +67,9 @@ public class RatingController {
 		return this.ratingService.getBydelivarableId(delivarableId);
 	}
 	
-	@GetMapping("/getByOrder/{employeeId}")
-	public ResponseEntity<List<Integer>> getRatingsByOrder(@PathVariable Integer employeeId){
-		return this.ratingService.getRatingsByOrder(employeeId);
+	@GetMapping("/getByOrder")
+	public ResponseEntity<List<Integer>> getRatingsByOrder(){
+		return this.ratingService.getRatingsByOrder();
 		
 	}
 	

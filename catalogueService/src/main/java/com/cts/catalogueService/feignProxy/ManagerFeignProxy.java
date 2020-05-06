@@ -21,10 +21,10 @@ import com.cts.catalogueService.model.ReviewDataModel;
 public interface ManagerFeignProxy {
 	
 	@PostMapping("/saveRating")
-	public void saveRating(@RequestBody RatingDataModel dataModel);
+	public RatingData saveRating(@RequestBody RatingDataModel dataModel);
 	
 	@PutMapping("/updateReview")
-	public void updateReview(@RequestBody ReviewDataModel dataModel);
+	public RatingData updateReview(@RequestBody ReviewDataModel dataModel);
 	
 	@GetMapping("/getRating/{delivarableId}")
 	public ResponseEntity<RatingData> getRatingByDelivarableId(@PathVariable Integer delivarableId);
