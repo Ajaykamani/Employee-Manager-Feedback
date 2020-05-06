@@ -6653,3 +6653,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2020-05-06 15:21:33,045 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2020-05-06 15:21:33,124 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2020-05-06 15:21:33,130 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-06 15:21:33,130 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Sony VAIO\Desktop\Maha\Sample\catalogueService\src\test\resources
