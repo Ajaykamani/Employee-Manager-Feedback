@@ -43,11 +43,6 @@ public class RatingServiceImpl implements RatingService {
 	public ResponseEntity<RatingData> getBydelivarableId(Integer delivarableId) {
 		// TODO Auto-generated method stub
 		RatingData data  = this.ratingRepository.findBydelivarableId(delivarableId);
-		log.info(data.toString());
-		log.info(data.getDelivarableId()+"");
-		log.info(data.getEmployeeId()+"");
-		log.info(data.getReview());
-		log.info(data.getRating()+"");
 		ResponseEntity<RatingData> result = new ResponseEntity<RatingData>(data,HttpStatus.OK);
 		return result;
 	}
