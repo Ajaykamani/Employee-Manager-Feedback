@@ -19,8 +19,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.cts.employeeService.entityClass.Delivarable;
 import com.cts.employeeService.entityClass.User;
+<<<<<<< HEAD
+=======
 import com.cts.employeeService.exceptions.customExceptions.ErrorResponse;
 import com.cts.employeeService.exceptions.customExceptions.IdNotFoundException;
+>>>>>>> 39a199339ad764d7c6d84b5e6f7ed66f88a6f4a9
 import com.cts.employeeService.modelClass.DelivarableModel;
 import com.cts.employeeService.modelClass.DelivarableStatus;
 import com.cts.employeeService.repository.UserRepository;
@@ -113,12 +116,13 @@ public class EmployeeController {
 		return response;
 	}
 	
-
+<<<<<<< HEAD
 	@GetMapping("/userDetails/{employeeId}/{managerId}")
 	public ResponseEntity<User> getDetailsByEmployeeIdAndBymanagerId(@PathVariable Integer employeeId,@PathVariable Integer managerId){
 		return this.employeeService.getUserByManagerId(employeeId, managerId);
 	}
 	
 }
-
-
+=======
+}
+>>>>>>> 39a199339ad764d7c6d84b5e6f7ed66f88a6f4a9
