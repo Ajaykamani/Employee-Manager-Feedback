@@ -24,8 +24,8 @@ public class RatingControllerTests {
 	@InjectMocks
 	private RatingController ratingController;
 	
-	/*@Mock
-	private RatingServiceImpl ratingService;*/
+	@Mock
+	private RatingServiceImpl ratingService;
 	
 	@Mock
 	private RatingRepository ratingRepository;

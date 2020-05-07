@@ -95,5 +95,13 @@ public class EmployeeServiceImpl implements EmployeeService {
 		ResponseEntity<List<Delivarable>> result  = new  ResponseEntity<List<Delivarable>>(list,HttpStatus.OK);
 		return result;
 	}
+	
+	@Override
+	public ResponseEntity<User> getUserByManagerId(Integer employeeId, Integer managerId) {
+		// TODO Auto-generated method stub
+		User user = this.userRepository.getEmployeeDetails(employeeId, managerId);
+		ResponseEntity<User> result  = new ResponseEntity<User>(user,HttpStatus.OK);
+		return result;
+	}
 
 }

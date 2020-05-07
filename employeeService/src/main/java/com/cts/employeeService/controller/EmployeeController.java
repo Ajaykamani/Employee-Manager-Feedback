@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cts.employeeService.entityClass.Delivarable;
+import com.cts.employeeService.entityClass.User;
 import com.cts.employeeService.modelClass.DelivarableModel;
 import com.cts.employeeService.modelClass.DelivarableStatus;
 import com.cts.employeeService.service.EmployeeService;
@@ -62,6 +63,11 @@ public class EmployeeController {
 	@GetMapping("/getDelivarables/{employeeId}")
 	public ResponseEntity<List<Delivarable>> getDelivarablesByEmployeeId(@PathVariable Integer employeeId){
 		return this.employeeService.getDelivarablesByEmployeeId(employeeId);
+	}
+	
+	@GetMapping("/userDetails/{employeeId}/{managerId}")
+	public ResponseEntity<User> getDetailsByEmployeeIdAndBymanagerId(@PathVariable Integer employeeId,@PathVariable Integer managerId){
+		return this.employeeService.getUserByManagerId(employeeId, managerId);
 	}
 	
 }

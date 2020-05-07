@@ -95,11 +95,13 @@ public class CatalogueController {
 			list.stream().forEach(id->{
 				UserDetails userData = new UserDetails();
 				User user = this.empProxy.getDetailsByEmployeeIdAndBymanagerId(id, managerId).getBody();
+				if(user != null) {
 				userData.setUserId(user.getUserId());
 				userData.setUserName(user.getUserName());
 				userData.setRole(user.getRole());
 				userData.setManagerId(user.getManagerId());
 				data.add(userData);
+				}
 			});
 			ResponseEntity<List<UserDetails>> result = new ResponseEntity<List<UserDetails>>(data,HttpStatus.OK);
 			return result;

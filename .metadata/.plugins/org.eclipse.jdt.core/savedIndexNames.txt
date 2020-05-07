@@ -202,7 +202,6 @@ INDEX VERSION 1.131+C:\Users\Sony VAIO\Desktop\Maha\Sample\.metadata\.plugins\or
 2497035414.index
 2536146688.index
 2823525971.index
-2436298133.index
 537560937.index
 3326393849.index
 413003672.index

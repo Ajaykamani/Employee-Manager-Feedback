@@ -4220,3 +4220,843 @@ Caused by: java.sql.SQLException: Error on delete of 'D:\xamp\tmp\#sql3784_8_2.M
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
 2020-05-07 11:51:33 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 11:56:33 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 12:01:33 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 12:02:47 [http-nio-4568-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:02:47 [http-nio-4568-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:02:47 [http-nio-4568-exec-4] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 2ms, rows: 2
+2020-05-07 12:02:47 [http-nio-4568-exec-4] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    519100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    722900 nanoseconds spent preparing 1 JDBC statements;
+    962500 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:03:33 [http-nio-4568-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+2020-05-07 12:03:33 [http-nio-4568-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([delivara1_0_] : [INTEGER]) - [1]
+2020-05-07 12:03:33 [http-nio-4568-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+2020-05-07 12:03:33 [http-nio-4568-exec-7] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([delivara1_0_] : [INTEGER]) - [1]
+2020-05-07 12:03:33 [http-nio-4568-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([employee2_0_] : [INTEGER]) - [2]
+2020-05-07 12:03:33 [http-nio-4568-exec-7] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([employee2_0_] : [INTEGER]) - [2]
+2020-05-07 12:03:33 [http-nio-4568-exec-7] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([rating3_0_] : [INTEGER]) - [3]
+2020-05-07 12:03:33 [http-nio-4568-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([rating3_0_] : [INTEGER]) - [3]
+2020-05-07 12:03:33 [http-nio-4568-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([review4_0_] : [VARCHAR]) - [string]
+2020-05-07 12:03:33 [http-nio-4568-exec-7] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([review4_0_] : [VARCHAR]) - [string]
+2020-05-07 12:03:33 [http-nio-4568-exec-6] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select generatedAlias0 from RatingData as generatedAlias0 where generatedAlias0.delivarableId=:param0, time: 800ms, rows: 1
+2020-05-07 12:03:33 [http-nio-4568-exec-7] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select generatedAlias0 from RatingData as generatedAlias0 where generatedAlias0.delivarableId=:param0, time: 339ms, rows: 1
+2020-05-07 12:03:34 [http-nio-4568-exec-7] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    4145300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    4456900 nanoseconds spent preparing 1 JDBC statements;
+    1122300 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:03:34 [http-nio-4568-exec-6] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    573600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1004300 nanoseconds spent preparing 1 JDBC statements;
+    93369200 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:04:03 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:4566
+2020-05-07 12:04:11 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=manager-service, profiles=[development], label=null, version=06711b46f2fe1b81e909d3b9d6a93131f7cb7451, state=null
+2020-05-07 12:04:11 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/SanthoshManapuram568/spring_boot_config_files.git/manager-service-development.properties'}]
+2020-05-07 12:04:12 [main] INFO  c.c.m.RatingControllerTests - The following profiles are active: development
+2020-05-07 12:04:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 12:04:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 868ms. Found 1 JPA repository interfaces.
+2020-05-07 12:04:17 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-05-07 12:04:17 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-05-07 12:04:18 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=335e5d49-c35d-3fcc-9b39-71886a8c2622
+2020-05-07 12:04:22 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 12:04:23 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 12:04:24 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@54567b05
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@54567b05
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@54567b05
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@2b458cd6
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@227a933d
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@dd737ea
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@27bb4dc5
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@27bb4dc5
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@27bb4dc5
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@5f61e002
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@5f61e002
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@5f61e002
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@42aa1324
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@42aa1324
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@42aa1324
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@6987a133
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@6987a133
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@6987a133
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@72eed547
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@72eed547
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@72eed547
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7babed9e
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7babed9e
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7babed9e
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@3c17bd0b
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@3c17bd0b
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@3c17bd0b
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6ce15112
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6ce15112
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@30ec211a
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@30ec211a
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@4cecc15a
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@4cecc15a
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@74f4a2ba
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@45dde6ac
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@11d2714a
+2020-05-07 12:04:25 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@11d2714a
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@1187dc82
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@1187dc82
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@710ae6a7
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@710ae6a7
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@3d0352
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@3d0352
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@36df4c26
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@36df4c26
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@4d25f816
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@4d25f816
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@590013c7
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@590013c7
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@1fcaea93
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@1fcaea93
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@734fbae3
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@734fbae3
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@68e47e7
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@68e47e7
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@6ba6557e
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@6ba6557e
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@3a588b5f
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@3a588b5f
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@3a588b5f
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@5c9e8a67
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@44d43cc9
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@44d43cc9
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@44d43cc9
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@3b8507df
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@9e33a6a
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@a3b858f
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@a3b858f
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@19bf47fc
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@19bf47fc
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@507049f2
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@507049f2
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@b3fc6d8
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@b3fc6d8
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@668a32a4
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@668a32a4
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@351e89fc
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@38bc5ac0
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@38bc5ac0
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@38bc5ac0
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1b3bec6c
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1b3bec6c
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1b3bec6c
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@22fb9a2c
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@21527b8
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@4586a8aa
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@4586a8aa
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@4586a8aa
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@46d1b59
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@46d1b59
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@46d1b59
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@85ab964
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@14874a5d
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@5d3f99d7
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@5d3f99d7
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5f883d90
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@3eac2e8a
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@3eac2e8a
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@9f0fc36
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@9f0fc36
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@fabef2e
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@786a3477
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@667797f
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@44fb6ebd
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@44fb6ebd
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@7e27f603
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@6136e1fc
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@1736c1e4
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@32dcfeea
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@738a815c
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@2565a7d0
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4fd7b79
+2020-05-07 12:04:26 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5103eea2
+2020-05-07 12:04:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-07 12:04:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-07 12:04:27 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-07 12:04:28 [main] DEBUG o.h.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@312a738d] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@7e50eeb9]
+2020-05-07 12:04:29 [main] DEBUG o.h.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@312a738d] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@5e6522a6]
+2020-05-07 12:04:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 12:04:32 [main] TRACE o.h.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@5e6522a6] for TypeConfiguration
+2020-05-07 12:04:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 12:04:34 [main] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2020-05-07 12:04:34 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:04:34 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:04:34 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:04:35 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:04:35 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:04:35 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:04:35 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:04:38 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 12:04:39 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-05-07 12:04:39 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-07 12:04:39 [main] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@544e6b
+2020-05-07 12:04:43 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 12:04:44 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-07 12:04:46 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-05-07 12:04:46 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-07 12:04:47 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:04:52 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-07 12:04:52 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-05-07 12:04:53 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-05-07 12:04:55 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-05-07 12:04:55 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-05-07 12:04:56 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-05-07 12:04:56 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-05-07 12:04:57 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 12:04:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2020-05-07 12:04:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-05-07 12:04:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2020-05-07 12:04:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2020-05-07 12:04:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-05-07 12:04:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2020-05-07 12:04:58 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-05-07 12:04:59 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2020-05-07 12:04:59 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-05-07 12:04:59 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-07 12:04:59 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1588833299142 with initial instances count: 4
+2020-05-07 12:04:59 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MANAGER-SERVICE with eureka with status UP
+2020-05-07 12:04:59 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1588833299182, current=UP, previous=STARTING]
+2020-05-07 12:04:59 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-05-07 12:04:59 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568: registering service...
+2020-05-07 12:04:59 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-05-07 12:04:59 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568 - registration status: 204
+2020-05-07 12:05:00 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-05-07 12:05:01 [main] INFO  c.c.m.RatingControllerTests - Started RatingControllerTests in 63.928 seconds (JVM running for 68.931)
+2020-05-07 12:05:03 [SpringContextShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MANAGER-SERVICE with eureka with status DOWN
+2020-05-07 12:05:03 [SpringContextShutdownHook] WARN  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1588833303145, current=DOWN, previous=UP]
+2020-05-07 12:05:03 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568: registering service...
+2020-05-07 12:05:03 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:05:03 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568 - registration status: 204
+2020-05-07 12:05:03 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 12:05:03 [SpringContextShutdownHook] TRACE o.h.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@5e6522a6] for TypeConfiguration
+2020-05-07 12:05:03 [SpringContextShutdownHook] DEBUG o.h.type.spi.TypeConfiguration$Scope - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@16d9463] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@5e6522a6]
+2020-05-07 12:05:03 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-07 12:05:03 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-07 12:05:03 [SpringContextShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2020-05-07 12:05:06 [SpringContextShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2020-05-07 12:05:06 [SpringContextShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568 - deregister  status: 200
+2020-05-07 12:05:06 [SpringContextShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2020-05-07 12:05:58 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:4566
+2020-05-07 12:06:08 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=manager-service, profiles=[development], label=null, version=06711b46f2fe1b81e909d3b9d6a93131f7cb7451, state=null
+2020-05-07 12:06:09 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/SanthoshManapuram568/spring_boot_config_files.git/manager-service-development.properties'}]
+2020-05-07 12:06:09 [main] INFO  c.c.m.RatingControllerTests - The following profiles are active: development
+2020-05-07 12:06:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 12:06:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1327ms. Found 1 JPA repository interfaces.
+2020-05-07 12:06:23 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-05-07 12:06:24 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-05-07 12:06:25 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=335e5d49-c35d-3fcc-9b39-71886a8c2622
+2020-05-07 12:06:33 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 12:06:39 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 12:06:42 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 12:06:45 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1ce6a9bd
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1ce6a9bd
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1ce6a9bd
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@3b42b729
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@25b20860
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@1af82ba8
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@17a77a7e
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@17a77a7e
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@17a77a7e
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@6ad3fbe4
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@6ad3fbe4
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6ad3fbe4
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5abb7a8f
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5abb7a8f
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5abb7a8f
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@29592929
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@29592929
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@29592929
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@774304ca
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@774304ca
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@774304ca
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@6614ecca
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@6614ecca
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@6614ecca
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7bc8ffbc
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7bc8ffbc
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7bc8ffbc
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@780546f8
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@780546f8
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@1800c1e3
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@1800c1e3
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@784212
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@784212
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@1edac3b4
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@5909285b
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@577cf459
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@577cf459
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@77ec9fdb
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@77ec9fdb
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@3636f2a7
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@3636f2a7
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@54a5496f
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@54a5496f
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@b2d8dcd
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@b2d8dcd
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@7cec3975
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@7cec3975
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@20155dae
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@20155dae
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@44c27b8b
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@44c27b8b
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@1071ae7c
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@1071ae7c
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@400008bf
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@400008bf
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@59278072
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@59278072
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@37e64e37
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@37e64e37
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@37e64e37
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@d08f85a
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@24955144
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@24955144
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@24955144
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6d6712b7
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@19f1be04
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@75f65d54
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@75f65d54
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@4d16975b
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4d16975b
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@b90c5a5
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@b90c5a5
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@3164d5aa
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3164d5aa
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@5383bf08
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@5383bf08
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@ef85567
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@57eed461
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@57eed461
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@57eed461
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@390a7532
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@390a7532
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@390a7532
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@520ee6b3
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@27210a3b
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@5ebe903a
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@5ebe903a
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@5ebe903a
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@3428420d
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@3428420d
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@3428420d
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@40aad17d
+2020-05-07 12:06:48 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@5d2e65bd
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@7aa63f50
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@7aa63f50
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6eab92f3
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@6315bb4
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6315bb4
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@3b576ee3
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@3b576ee3
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6595ffce
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@e18d2a2
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@30b1c5d5
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@65a2755e
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@65a2755e
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5d8e4fa8
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@649009d6
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@652f26da
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@484a5ddd
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@6796a873
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@3acc3ee
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1f293cb7
+2020-05-07 12:06:49 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5972e3a
+2020-05-07 12:06:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-07 12:06:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-07 12:07:00 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-07 12:07:01 [main] DEBUG o.h.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@f5f8de2] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@6baee63b]
+2020-05-07 12:07:04 [main] DEBUG o.h.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@f5f8de2] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@75a6bd06]
+2020-05-07 12:07:10 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 12:07:10 [main] TRACE o.h.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@75a6bd06] for TypeConfiguration
+2020-05-07 12:07:10 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 12:07:14 [main] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2020-05-07 12:07:14 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:07:14 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:07:14 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:07:15 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:07:18 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:07:18 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:07:18 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:07:23 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 12:07:25 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-05-07 12:07:25 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-07 12:07:26 [main] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1d642682
+2020-05-07 12:07:32 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 12:07:35 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-07 12:07:37 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-05-07 12:07:37 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-07 12:07:41 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:07:52 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-07 12:07:53 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-05-07 12:07:55 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-05-07 12:08:01 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-05-07 12:08:01 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-05-07 12:08:05 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-05-07 12:08:05 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-05-07 12:08:07 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 12:08:08 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2020-05-07 12:08:08 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-05-07 12:08:08 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2020-05-07 12:08:08 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2020-05-07 12:08:08 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-05-07 12:08:08 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2020-05-07 12:08:08 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-05-07 12:08:09 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2020-05-07 12:08:09 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-05-07 12:08:09 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-07 12:08:09 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1588833489904 with initial instances count: 4
+2020-05-07 12:08:10 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MANAGER-SERVICE with eureka with status UP
+2020-05-07 12:08:10 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1588833490036, current=UP, previous=STARTING]
+2020-05-07 12:08:10 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-05-07 12:08:10 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568: registering service...
+2020-05-07 12:08:10 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-05-07 12:08:10 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568 - registration status: 204
+2020-05-07 12:08:10 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-05-07 12:08:11 [main] INFO  c.c.m.RatingControllerTests - Started RatingControllerTests in 149.586 seconds (JVM running for 158.924)
+2020-05-07 12:08:16 [SpringContextShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MANAGER-SERVICE with eureka with status DOWN
+2020-05-07 12:08:16 [SpringContextShutdownHook] WARN  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1588833496343, current=DOWN, previous=UP]
+2020-05-07 12:08:16 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568: registering service...
+2020-05-07 12:08:16 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:08:16 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568 - registration status: 204
+2020-05-07 12:08:16 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 12:08:16 [SpringContextShutdownHook] TRACE o.h.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@75a6bd06] for TypeConfiguration
+2020-05-07 12:08:16 [SpringContextShutdownHook] DEBUG o.h.type.spi.TypeConfiguration$Scope - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@17c1280] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@75a6bd06]
+2020-05-07 12:08:16 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-07 12:08:17 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-07 12:08:17 [SpringContextShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2020-05-07 12:08:20 [SpringContextShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2020-05-07 12:08:20 [SpringContextShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568 - deregister  status: 200
+2020-05-07 12:08:20 [SpringContextShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2020-05-07 12:08:36 [DiscoveryClient-HeartbeatExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568 - Re-registering apps/MANAGER-SERVICE
+2020-05-07 12:08:36 [DiscoveryClient-HeartbeatExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568: registering service...
+2020-05-07 12:08:36 [DiscoveryClient-HeartbeatExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568 - registration status: 204
+2020-05-07 12:11:33 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 12:15:15 [http-nio-4568-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:15:15 [http-nio-4568-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:15:15 [http-nio-4568-exec-9] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 5ms, rows: 2
+2020-05-07 12:15:15 [http-nio-4568-exec-9] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    2162100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    2417800 nanoseconds spent preparing 1 JDBC statements;
+    1060100 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:15:26 [http-nio-4568-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:15:26 [http-nio-4568-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:15:26 [http-nio-4568-exec-10] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 24ms, rows: 2
+2020-05-07 12:15:26 [http-nio-4568-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:15:26 [http-nio-4568-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:15:26 [http-nio-4568-exec-2] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 5ms, rows: 2
+2020-05-07 12:15:26 [http-nio-4568-exec-10] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    20568000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    20780500 nanoseconds spent preparing 1 JDBC statements;
+    2335200 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:15:26 [http-nio-4568-exec-2] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    2305200 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    2540000 nanoseconds spent preparing 1 JDBC statements;
+    1676400 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:15:28 [http-nio-4568-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:15:28 [http-nio-4568-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:15:28 [http-nio-4568-exec-3] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 4ms, rows: 2
+2020-05-07 12:15:28 [http-nio-4568-exec-3] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    574400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    749700 nanoseconds spent preparing 1 JDBC statements;
+    2145900 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:16:33 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 12:18:03 [http-nio-4568-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:18:03 [http-nio-4568-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:18:03 [http-nio-4568-exec-4] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 6ms, rows: 2
+2020-05-07 12:18:03 [http-nio-4568-exec-4] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    1806000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    2108500 nanoseconds spent preparing 1 JDBC statements;
+    1727300 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:18:29 [http-nio-4568-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:18:29 [http-nio-4568-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:18:29 [http-nio-4568-exec-6] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 20ms, rows: 2
+2020-05-07 12:18:29 [http-nio-4568-exec-6] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    5888100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    6131500 nanoseconds spent preparing 1 JDBC statements;
+    12148800 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:19:36 [http-nio-4568-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:19:36 [http-nio-4568-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:19:36 [http-nio-4568-exec-8] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 12ms, rows: 2
+2020-05-07 12:19:36 [http-nio-4568-exec-8] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    6798500 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    7016700 nanoseconds spent preparing 1 JDBC statements;
+    3959200 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:21:33 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 12:26:33 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 12:29:37 [http-nio-4568-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:29:37 [http-nio-4568-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:29:37 [http-nio-4568-exec-10] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 3ms, rows: 2
+2020-05-07 12:29:37 [http-nio-4568-exec-10] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    526100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    773300 nanoseconds spent preparing 1 JDBC statements;
+    1104200 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:29:45 [http-nio-4568-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:29:45 [http-nio-4568-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:29:45 [http-nio-4568-exec-2] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 2ms, rows: 2
+2020-05-07 12:29:45 [http-nio-4568-exec-2] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    503200 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    691400 nanoseconds spent preparing 1 JDBC statements;
+    775200 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:30:18 [http-nio-4568-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:30:18 [http-nio-4568-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:30:18 [http-nio-4568-exec-5] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 2ms, rows: 2
+2020-05-07 12:30:18 [http-nio-4568-exec-5] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    585200 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    778600 nanoseconds spent preparing 1 JDBC statements;
+    883800 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:30:22 [http-nio-4568-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:30:22 [http-nio-4568-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:30:22 [http-nio-4568-exec-1] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 15ms, rows: 2
+2020-05-07 12:30:22 [http-nio-4568-exec-1] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    541100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    728300 nanoseconds spent preparing 1 JDBC statements;
+    916100 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:30:29 [http-nio-4568-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:30:29 [http-nio-4568-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:30:29 [http-nio-4568-exec-4] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 32ms, rows: 2
+2020-05-07 12:30:29 [http-nio-4568-exec-4] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    479200 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    721000 nanoseconds spent preparing 1 JDBC statements;
+    1150300 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:31:33 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 12:36:33 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 12:37:27 [http-nio-4568-exec-7] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:37:27 [http-nio-4568-exec-7] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:37:27 [http-nio-4568-exec-7] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 2ms, rows: 2
+2020-05-07 12:37:27 [http-nio-4568-exec-7] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    495900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    697800 nanoseconds spent preparing 1 JDBC statements;
+    785800 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:37:31 [http-nio-4568-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:37:31 [http-nio-4568-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:37:31 [http-nio-4568-exec-8] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 2ms, rows: 2
+2020-05-07 12:37:31 [http-nio-4568-exec-8] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    451400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    581600 nanoseconds spent preparing 1 JDBC statements;
+    772600 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:37:34 [http-nio-4568-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:37:34 [http-nio-4568-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:37:34 [http-nio-4568-exec-9] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 2ms, rows: 2
+2020-05-07 12:37:34 [http-nio-4568-exec-9] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    386700 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    550700 nanoseconds spent preparing 1 JDBC statements;
+    760100 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-05-07 12:41:33 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 12:43:40 [http-nio-4568-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [2]
+2020-05-07 12:43:40 [http-nio-4568-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [INTEGER]) - [1]
+2020-05-07 12:43:40 [http-nio-4568-exec-2] DEBUG o.h.stat.internal.StatisticsImpl - HHH000117: HQL: select r.employeeId from RatingData r group by employeeId order by avg(rating) desc, time: 25ms, rows: 2
+2020-05-07 12:43:40 [http-nio-4568-exec-2] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    21372100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    21612900 nanoseconds spent preparing 1 JDBC statements;
+    1290900 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
