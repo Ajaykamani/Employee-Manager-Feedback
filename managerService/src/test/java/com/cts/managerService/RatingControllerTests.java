@@ -33,7 +33,7 @@ public class RatingControllerTests {
 	private RatingRepository ratingRepository;
 	
 	@Test
-	public void getRatingsByOrder() {
+	public void getRatingsByOrder() throws Exception {
 		ResponseEntity<List<Integer>> data = this.ratingController.getRatingsByOrder();
 		assertEquals(HttpStatus.OK,data.getStatusCode());
 	}
