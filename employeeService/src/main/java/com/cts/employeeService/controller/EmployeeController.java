@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cts.employeeService.entityClass.Delivarable;
@@ -31,6 +32,12 @@ public class EmployeeController {
 	private EmployeeService employeeService;
 	
 	private org.slf4j.Logger logger = LoggerFactory.getLogger(this.getClass());
+	
+
+	@RequestMapping("/")
+	public String home() {
+		return "welcome to employee management";
+	}
 	
 	
 	@PostMapping("/saveDelivarable")

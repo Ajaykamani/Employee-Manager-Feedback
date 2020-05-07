@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,8 +23,19 @@ import com.cts.employeeService.service.EmployeeService;
 @RunWith(SpringRunner.class)
 public class EmployeTestSample {
 
-	@Mock
+	@InjectMocks
 	EmployeeController employeeController;
+	
+	@Mock
+	EmployeeService employeeService;
+	
+	@Test
+	public void testHello() {
+	EmployeeController employee = new EmployeeController();
+	String result = employee.home();
+	assertEquals(result,"welcome to employee management");
+	}
+	
 	
 	@Test
 	public void getEmployeeIdsBymanagerId(){
