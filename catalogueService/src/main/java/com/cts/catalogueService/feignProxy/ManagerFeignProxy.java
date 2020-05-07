@@ -16,7 +16,7 @@ import com.cts.catalogueService.model.RatingDataModel;
 import com.cts.catalogueService.model.ReviewDataModel;
 
 
-@FeignClient(name ="api-gateway",url = "http://localhost:8765/")
+@FeignClient(name ="api-gateway",url = "http://localhost:8765/manager-service")
 @RibbonClient(name ="manager-service")
 public interface ManagerFeignProxy {
 	
@@ -29,7 +29,7 @@ public interface ManagerFeignProxy {
 	@GetMapping("/getRating/{delivarableId}")
 	public ResponseEntity<RatingData> getRatingByDelivarableId(@PathVariable Integer delivarableId);
 	
-	@GetMapping("/getByOrder}")
+	@GetMapping("/getByOrder")
 	public ResponseEntity<List<Integer>> getRatingsByOrder();
 		
 

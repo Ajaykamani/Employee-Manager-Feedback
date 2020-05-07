@@ -12,7 +12,7 @@ import com.cts.catalogueService.model.DelivarableStatus;
 import com.cts.catalogueService.model.User;
 import com.cts.catalogueService.model.Delivarable;
 
-@FeignClient(name ="api-gateway",url = "http://localhost:8765/")
+@FeignClient(name ="api-gateway",url = "http://localhost:8765/employee-service")
 @RibbonClient(name ="employee-service")
 public interface EmployeeFeignProxy {
 	
