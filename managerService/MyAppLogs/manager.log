@@ -5061,3 +5061,23 @@ Caused by: java.sql.SQLException: Error on delete of 'D:\xamp\tmp\#sql3784_8_2.M
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
 2020-05-07 12:46:33 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 12:51:33 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-05-07 12:53:43 [Thread-10] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MANAGER-SERVICE with eureka with status DOWN
+2020-05-07 12:53:43 [Thread-10] WARN  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1588836223846, current=DOWN, previous=UP]
+2020-05-07 12:53:44 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568: registering service...
+2020-05-07 12:53:46 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568 - registration status: 204
+2020-05-07 12:54:02 [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:54:11 [Thread-10] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 12:54:13 [Thread-10] TRACE o.h.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@1ba54656] for TypeConfiguration
+2020-05-07 12:54:13 [Thread-10] DEBUG o.h.type.spi.TypeConfiguration$Scope - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@5f811141] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@1ba54656]
+2020-05-07 12:54:15 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2020-05-07 12:54:16 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2020-05-07 12:54:17 [Thread-10] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2020-05-07 12:54:21 [Thread-10] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2020-05-07 12:54:21 [Thread-10] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MANAGER-SERVICE/DESKTOP-RD40MUL:manager-service:4568 - deregister  status: 200
+2020-05-07 12:54:24 [Thread-10] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2020-05-07 12:58:35 [restartedMain] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:4566
+2020-05-07 12:58:45 [restartedMain] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=manager-service, profiles=[development], label=null, version=06711b46f2fe1b81e909d3b9d6a93131f7cb7451, state=null
+2020-05-07 12:58:45 [restartedMain] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/SanthoshManapuram568/spring_boot_config_files.git/manager-service-development.properties'}]
+2020-05-07 12:58:46 [restartedMain] INFO  c.c.m.ManagerServiceApplication - The following profiles are active: development
+2020-05-07 13:00:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.

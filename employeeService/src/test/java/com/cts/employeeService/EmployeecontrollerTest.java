@@ -16,11 +16,17 @@ import com.cts.employeeService.controller.EmployeeController;
 import com.cts.employeeService.entityClass.Delivarable;
 
 
-@SpringBootTest
+@RunWith(MockitoJUnitRunner.class)
 public class EmployeecontrollerTest {
 
 	@InjectMocks
 	EmployeeController employeeController;
+	
+	@Test
+	public void getEmployeeIdsBymanagerId(){
+		ResponseEntity<List<Integer>> data = this.employeeController.getEmployeeIdsBymanagerId(1);
+		assertEquals(HttpStatus.SC_OK, data.getStatusCode());
+	}
 	
 	@Test
 	public void getDelivarablesByEmployeeIdTest() {

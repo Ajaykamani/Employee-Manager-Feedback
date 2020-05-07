@@ -4707,3 +4707,89 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:31:57.324
 !MESSAGE executing callback sts4.classpath.RZqbwrcq SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:52:07.621
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:52:07.700
+!MESSAGE classpath=201 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:52:07.739
+!MESSAGE buffering callback sts4.classpath.RZqbwrcq api-gateway false 201
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:52:07.752
+!MESSAGE executing callback sts4.classpath.RZqbwrcq 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:52:07.824
+!MESSAGE executing callback sts4.classpath.RZqbwrcq SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:18.694
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:18.792
+!MESSAGE classpath=221 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:19.404
+!MESSAGE buffering callback sts4.classpath.RZqbwrcq managerService false 221
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:19.411
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:19.483
+!MESSAGE classpath=203 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:19.539
+!MESSAGE buffering callback sts4.classpath.RZqbwrcq api-gateway false 203
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:19.541
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:19.652
+!MESSAGE classpath=196 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:20.103
+!MESSAGE buffering callback sts4.classpath.RZqbwrcq catalogueService false 196
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:20.180
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:20.285
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:20.861
+!MESSAGE buffering callback sts4.classpath.RZqbwrcq configServer false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:20.931
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:21.017
+!MESSAGE classpath=184 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:21.807
+!MESSAGE buffering callback sts4.classpath.RZqbwrcq discoveryServer false 184
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:21.810
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:21.875
+!MESSAGE classpath=215 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:21.969
+!MESSAGE buffering callback sts4.classpath.RZqbwrcq employeeService false 215
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:21.971
+!MESSAGE executing callback sts4.classpath.RZqbwrcq 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-07 12:53:24.510
+!MESSAGE executing callback sts4.classpath.RZqbwrcq FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-05-07 12:53:24.605
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
