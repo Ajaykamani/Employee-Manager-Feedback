@@ -5060,3 +5060,4 @@ Caused by: java.sql.SQLException: Error on delete of 'D:\xamp\tmp\#sql3784_8_2.M
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
+2020-05-07 12:46:33 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
