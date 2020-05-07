@@ -5,11 +5,15 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
+
+import java.util.List;
+
 import com.cts.employeeService.entityClass.Delivarable;
 import com.cts.employeeService.modelClass.DelivarableModel;
 import com.cts.employeeService.modelClass.DelivarableStatus;
@@ -37,7 +41,9 @@ public class EmployeeServiceTest {
 		//Delivarable obj_returned = this.empService.saveDelivarable(del);
 		when(delivarableRepository.save(delivarable)).thenReturn(delivarable);
 		//assertEquals((Delivarable)delivarable,(Delivarable)obj_returned);
-		assertEquals(del.getEmployeeId(),delivarable.getEmployeeId());
+		//assertEquals(del.getEmployeeId(),delivarable.getEmployeeId());
+		//assertEquals(del,empService.saveDelivarable(del));
+		assertEquals(del.getProjectname(),delivarable.getPojectName());
 	}
 
 	@Test
@@ -57,7 +63,16 @@ public class EmployeeServiceTest {
 		assertEquals(del.getDelivarableId(),delivarable.getId());
 	}
 	
+	@Test
+	public void getEmployeeIds() {
+		ResponseEntity<List<Integer>> list = this.empService.getEmployeeIds(1);
+		assertEquals(HttpStatus.OK,list.getStatusCode());			
+	}
 	
+	public void getDelivarablesByEmployeeId() {
+		ResponseEntity<List<Delivarable>> result = this.empService.getDelivarablesByEmployeeId(1);
+		assertEquals(HttpStatus.OK,result.getStatusCode());
+	}
 
 
 }
