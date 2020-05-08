@@ -1,4 +1,4 @@
-package com.cts.employeeService.entityClass;
+package com.cts.employeeService.entity;
 
 import java.io.Serializable;
 

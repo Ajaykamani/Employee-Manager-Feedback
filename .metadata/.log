@@ -11050,3 +11050,100 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:33:10.342
 !MESSAGE executing callback sts4.classpath.SXBpBlhC SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:14.881
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:15.106
+!MESSAGE classpath=201 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:15.311
+!MESSAGE buffering callback sts4.classpath.SXBpBlhC api-gateway false 201
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:15.524
+!MESSAGE executing callback sts4.classpath.SXBpBlhC 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:17.568
+!MESSAGE executing callback sts4.classpath.SXBpBlhC FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-05-08 14:54:17.570
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:48.774
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:48.859
+!MESSAGE classpath=203 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:48.935
+!MESSAGE buffering callback sts4.classpath.SXBpBlhC api-gateway false 203
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:48.937
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:49.000
+!MESSAGE classpath=196 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:49.067
+!MESSAGE buffering callback sts4.classpath.SXBpBlhC catalogueService false 196
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:49.075
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:49.119
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:49.147
+!MESSAGE buffering callback sts4.classpath.SXBpBlhC configServer false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:50.254
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:50.327
+!MESSAGE classpath=184 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:50.804
+!MESSAGE buffering callback sts4.classpath.SXBpBlhC discoveryServer false 184
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:50.808
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:50.920
+!MESSAGE classpath=215 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:50.988
+!MESSAGE buffering callback sts4.classpath.SXBpBlhC employeeService false 215
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:50.993
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:51.052
+!MESSAGE classpath=221 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:51.127
+!MESSAGE buffering callback sts4.classpath.SXBpBlhC managerService false 221
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:51.129
+!MESSAGE executing callback sts4.classpath.SXBpBlhC 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-08 14:54:53.237
+!MESSAGE executing callback sts4.classpath.SXBpBlhC FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-05-08 14:54:53.281
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

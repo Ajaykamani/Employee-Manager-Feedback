@@ -1,4 +1,4 @@
-package com.cts.employeeService.entityClass;
+package com.cts.employeeService.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

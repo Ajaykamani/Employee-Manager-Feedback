@@ -1,4 +1,4 @@
-package com.cts.employeeService.modelClass;
+package com.cts.employeeService.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

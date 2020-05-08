@@ -22,11 +22,14 @@ import lombok.ToString;
 @Table
 public class Authorities implements Serializable {
 	
+<<<<<<< HEAD
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -7794735684718733582L;
-	
+
+=======
+>>>>>>> 16a8199beb633a2f360034274644063c4a7eed38
 	@Id
 	@Column(insertable = true ,name = "username", length=100)
 	private String username;
