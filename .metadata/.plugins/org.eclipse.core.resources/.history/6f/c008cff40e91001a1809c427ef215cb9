@@ -50,6 +50,7 @@ public class CatalogueController {
 		rating.setDelivarableId(delivarableData.getDelivarableId());
 		rating.setEmployeeId(delivarableData.getEmployeeId());
 		rating.setRating(delivarableData.getRating());
+		//this.managerProxy.saveRating(rating);
 		this.restTemplate.postForObject("http://localhost:8765/manager-service/saveRating", rating, RatingDataModel.class);
 		
 		DelivarableStatus status = new DelivarableStatus();
@@ -57,7 +58,7 @@ public class CatalogueController {
 		status.setEmployeeId(delivarableData.getEmployeeId());
 		status.setProjectname(delivarableData.getProjectname());
 		status.setRemarks(delivarableData.getRemarks());
-		
+		//this.empProxy.updatedelivarableRatingStatus(status);
 		this.restTemplate.put("http://localhost:8765/employee-service/updateRatingStatus", status);
 		return true;
 		
@@ -70,15 +71,19 @@ public class CatalogueController {
 		review.setEmployeeId(delivarableData.getEmployeeId());
 		review.setRating(delivarableData.getRating());
 		review.setReview(delivarableData.getReview());
+		//this.managerProxy.updateReview(review);
 		this.restTemplate.put("http://localhost:8765/manager-service/updateReview", review);
+		//this.restTemplate.exchange("http://localhost:8765/manager-service", HttpMethod.PUT, review,null);
 		
 		DelivarableStatus status = new DelivarableStatus();
 		status.setDelivarableId(delivarableData.getDelivarableId());
 		status.setEmployeeId(delivarableData.getEmployeeId());
 		status.setProjectname(delivarableData.getProjectname());
 		status.setRemarks(delivarableData.getRemarks());
+		//this.empProxy.updatedelivarableReviewStatus(status);
 		this.restTemplate.put("http://localhost:8765/employee-service/updateReviewStatus", status);
 		return true;
+		//this.restTemplate.exchange("http://localhost:8765/manager-service", HttpMethod.PUT, review,null);
 		
 	}
 	
@@ -98,7 +103,8 @@ public class CatalogueController {
 				data.add(userData);
 				}
 			});
-			return  new ResponseEntity<List<UserDetails>>(data,HttpStatus.OK);
+			ResponseEntity<List<UserDetails>> result = new ResponseEntity<List<UserDetails>>(data,HttpStatus.OK);
+			return result;
 	}
 	
 	//retrieve all delivarables of an employee
@@ -107,6 +113,7 @@ public class CatalogueController {
 		List<Delivarable> list = this.empProxy.getDelivarablesByEmployeeId(employeeId).getBody();
 		List<DelivarableResponse> response = new ArrayList<DelivarableResponse>();
 		list.stream().forEach(delivarable->{
+			//delivarableId, employeeId, pojectName, remarks, rated, reviewed, rating, review
 			DelivarableResponse data = new DelivarableResponse();
 			data.setDelivarableId(delivarable.getId());
 			data.setEmployeeId(delivarable.getEmployeeId());
@@ -119,8 +126,9 @@ public class CatalogueController {
 			data.setReview(rating.getReview());
 			response.add(data);
 		});
-		return  new ResponseEntity<List<DelivarableResponse>>(response,HttpStatus.OK);
+		ResponseEntity<List<DelivarableResponse>> result = new ResponseEntity<List<DelivarableResponse>>(response,HttpStatus.OK);
 		
+		return result;
 	}
 	
 	

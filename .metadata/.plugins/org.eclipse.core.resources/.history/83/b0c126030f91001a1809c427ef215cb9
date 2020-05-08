@@ -107,6 +107,7 @@ public class CatalogueController {
 		List<Delivarable> list = this.empProxy.getDelivarablesByEmployeeId(employeeId).getBody();
 		List<DelivarableResponse> response = new ArrayList<DelivarableResponse>();
 		list.stream().forEach(delivarable->{
+			//delivarableId, employeeId, pojectName, remarks, rated, reviewed, rating, review
 			DelivarableResponse data = new DelivarableResponse();
 			data.setDelivarableId(delivarable.getId());
 			data.setEmployeeId(delivarable.getEmployeeId());
@@ -119,8 +120,9 @@ public class CatalogueController {
 			data.setReview(rating.getReview());
 			response.add(data);
 		});
-		return  new ResponseEntity<List<DelivarableResponse>>(response,HttpStatus.OK);
+		ResponseEntity<List<DelivarableResponse>> result = new ResponseEntity<List<DelivarableResponse>>(response,HttpStatus.OK);
 		
+		return result;
 	}
 	
 	

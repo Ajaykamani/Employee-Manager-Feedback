@@ -1,6 +1,7 @@
 package com.cts.employeeService.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import javax.validation.ValidationException;
 
@@ -23,6 +24,7 @@ import com.cts.employeeService.exceptions.customExceptions.ErrorResponse;
 import com.cts.employeeService.exceptions.customExceptions.IdNotFoundException;
 import com.cts.employeeService.model.DelivarableModel;
 import com.cts.employeeService.model.DelivarableStatus;
+import com.cts.employeeService.repository.UserRepository;
 import com.cts.employeeService.service.EmployeeService;
 
 import io.swagger.annotations.Api;
@@ -34,6 +36,11 @@ public class EmployeeController {
 	
 	@Autowired
 	private EmployeeService employeeService;
+	
+	
+	@Autowired
+	private UserRepository userRepository;
+	
 	
 	@PostMapping("/saveDelivarable")
 	public Delivarable saveDelivarable(@RequestBody DelivarableModel delivarableModel ) {
@@ -76,17 +83,21 @@ public class EmployeeController {
 	
 	@GetMapping("/employeeIds/{managerId}")
 	public ResponseEntity<List<Integer>> getEmployeeIdsBymanagerId(@PathVariable Integer managerId){
-		try {
+		List<User> d = this.userRepository.findBymanagerId(managerId);
+		if(d.size()!=0) {
 			return this.employeeService.getEmployeeIds(managerId);
-		}catch(Exception e) {
-			throw new IdNotFoundException("No employee with maganer id "+managerId+" not found");		
 		}
+			else {
+					throw new IdNotFoundException("No employee with maganer id "+managerId+" not found");		
+			}
 		}
 	@GetMapping("/getDelivarables/{employeeId}")
 	public ResponseEntity<List<Delivarable>> getDelivarablesByEmployeeId(@PathVariable Integer employeeId){
-		try {
+		Optional<User> d = this.userRepository.findById(employeeId);
+		if(d.isPresent()) {
 		return this.employeeService.getDelivarablesByEmployeeId(employeeId);
-		}catch(Exception e) {
+	}
+		else {
 				throw new IdNotFoundException("Employee With id "+employeeId+" not found");		
 		}
 	}
@@ -97,9 +108,10 @@ public class EmployeeController {
 		ErrorResponse error = new ErrorResponse(ex.getMessage(), 
 															  HttpStatus.NOT_FOUND.value(), 
 															  System.currentTimeMillis());
-	
-		return new ResponseEntity<ErrorResponse>(error, HttpStatus.NOT_FOUND);
+		ResponseEntity<ErrorResponse> response =
+										new ResponseEntity<ErrorResponse>(error, HttpStatus.NOT_FOUND);
 		
+		return response;
 	}
 	
 
