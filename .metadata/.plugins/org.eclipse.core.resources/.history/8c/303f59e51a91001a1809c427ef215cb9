@@ -92,7 +92,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public ResponseEntity<User> getUserByManagerId(Integer employeeId, Integer managerId) {
 
-		User user = this.userRepository.findByUserIdAndManagerId(employeeId, managerId);
+		User user = this.userRepository.findByuserIdmanagerId(employeeId, managerId);
 		return  new ResponseEntity<User>(user,HttpStatus.OK);
 	}
 
