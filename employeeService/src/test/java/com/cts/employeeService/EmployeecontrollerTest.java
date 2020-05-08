@@ -8,12 +8,10 @@ import org.apache.http.HttpStatus;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.ResponseEntity;
 import com.cts.employeeService.controller.EmployeeController;
-import com.cts.employeeService.entityClass.Delivarable;
+import com.cts.employeeService.entity.Delivarable;
 
 
 @RunWith(MockitoJUnitRunner.class)

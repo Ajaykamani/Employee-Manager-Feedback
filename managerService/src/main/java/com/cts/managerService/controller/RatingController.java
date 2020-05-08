@@ -13,10 +13,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import com.cts.managerService.entityClass.RatingData;
+
+import com.cts.managerService.entity.RatingData;
 import com.cts.managerService.exceptions.ResourceNotFoundException;
-import com.cts.managerService.modelClass.RatingDataModel;
-import com.cts.managerService.modelClass.ReviewDataModel;
+import com.cts.managerService.model.RatingDataModel;
+import com.cts.managerService.model.ReviewDataModel;
 import com.cts.managerService.repository.RatingRepository;
 import com.cts.managerService.service.RatingService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
@@ -50,6 +51,8 @@ public class RatingController {
         return "fall back method";
     }
 	
+    
+    //This method saves the rating of a particular delivarable
     @PostMapping("/saveRating")
 	public void saveRating(@RequestBody RatingDataModel dataModel) throws Exception {
     	if(dataModel.getRating()==null) {
@@ -61,7 +64,7 @@ public class RatingController {
 		}
 	}
 		
-	
+	//This method updates the review of particular delivarable already saved
 	@PutMapping("/updateReview")
 	public void updateReview(@RequestBody ReviewDataModel dataModel) throws Exception  {
 		if(StringUtils.isBlank(dataModel.getReview())) {
@@ -72,6 +75,7 @@ public class RatingController {
 		}
 	}
 	
+	//This method returns the Rating and review of a delivarable based od id 
 	@GetMapping("/getRating/{delivarableId}")
 	public ResponseEntity<RatingData> getRatingByDelivarableId(@PathVariable Integer delivarableId){
 		
@@ -82,6 +86,8 @@ public class RatingController {
 			throw new ResourceNotFoundException("Given Delivarable id '"+delivarableId+"' is not avilable");
 		}
 	}
+	
+	//This method returns list of employee ids in descending order by avg(rating)
 	@GetMapping("/getByOrder")
 	public ResponseEntity<List<Integer>> getRatingsByOrder() throws Exception{
 		List<RatingData> r = this.ratingRepo.findAll();

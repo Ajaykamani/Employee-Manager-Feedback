@@ -2,13 +2,10 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="lombok.extern.slf4j.Slf4j"/>
 <fullyQualifiedTypeName name="org.mockito.junit.MockitoJUnitRunner"/>
-<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
 <fullyQualifiedTypeName name="com.cts.employeeService.entityClass.Delivarable"/>
 <fullyQualifiedTypeName name="com.cts.employeeService.controller.EmployeeController"/>
 <fullyQualifiedTypeName name="org.apache.http.HttpStatus"/>
 <fullyQualifiedTypeName name="com.cts.catalogueService.model.Delivarable"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
 <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringRunner"/>
 <fullyQualifiedTypeName name="org.mockito.InjectMocks"/>
@@ -17,7 +14,13 @@
 <fullyQualifiedTypeName name="com.cts.managerService.repository.RatingRepository"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="com.cts.managerService.modelClass.RatingDataModel"/>
-<fullyQualifiedTypeName name="com.cts.managerService.entityClass.RatingData"/>
-<fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
 <fullyQualifiedTypeName name="com.cts.managerService.service.RatingServiceImpl"/>
+<fullyQualifiedTypeName name="com.cts.managerService.controller.RatingController"/>
+<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="com.cts.managerService.entityClass.RatingData"/>
+<fullyQualifiedTypeName name="com.cts.employeeService.entityClass.User"/>
+<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
 </qualifiedTypeNameHistroy>

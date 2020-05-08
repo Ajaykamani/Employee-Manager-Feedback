@@ -10,7 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 import com.cts.employeeService.controller.EmployeeController;
-import com.cts.employeeService.entityClass.Delivarable;
+import com.cts.employeeService.entity.Delivarable;
 import com.cts.employeeService.service.EmployeeService;
 
 @RunWith(SpringRunner.class)

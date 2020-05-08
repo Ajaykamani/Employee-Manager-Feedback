@@ -4,9 +4,10 @@ import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import com.cts.managerService.entityClass.RatingData;
-import com.cts.managerService.modelClass.RatingDataModel;
-import com.cts.managerService.modelClass.ReviewDataModel;
+
+import com.cts.managerService.entity.RatingData;
+import com.cts.managerService.model.RatingDataModel;
+import com.cts.managerService.model.ReviewDataModel;
 
 @Service
 public interface RatingService {

@@ -13,10 +13,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.cts.managerService.entityClass.RatingData;
-import com.cts.managerService.modelClass.RatingDataModel;
+import com.cts.managerService.entity.RatingData;
+import com.cts.managerService.model.RatingDataModel;
 import com.cts.managerService.repository.RatingRepository;
-import com.cts.managerService.service.RatingService;
 import com.cts.managerService.service.RatingServiceImpl;
 
 @SpringBootTest
