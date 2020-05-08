@@ -14,9 +14,9 @@ import static org.mockito.Mockito.when;
 
 import java.util.List;
 
-import com.cts.employeeService.entityClass.Delivarable;
-import com.cts.employeeService.modelClass.DelivarableModel;
-import com.cts.employeeService.modelClass.DelivarableStatus;
+import com.cts.employeeService.entity.Delivarable;
+import com.cts.employeeService.model.DelivarableModel;
+import com.cts.employeeService.model.DelivarableStatus;
 import com.cts.employeeService.repository.DelivarableRepository;
 import com.cts.employeeService.repository.UserRepository;
 import com.cts.employeeService.service.EmployeeServiceImpl;

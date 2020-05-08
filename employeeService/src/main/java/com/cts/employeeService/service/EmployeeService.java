@@ -4,10 +4,11 @@ import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import com.cts.employeeService.entityClass.Delivarable;
-import com.cts.employeeService.entityClass.User;
-import com.cts.employeeService.modelClass.DelivarableModel;
-import com.cts.employeeService.modelClass.DelivarableStatus;
+
+import com.cts.employeeService.entity.Delivarable;
+import com.cts.employeeService.entity.User;
+import com.cts.employeeService.model.DelivarableModel;
+import com.cts.employeeService.model.DelivarableStatus;
 
 @Service
 public interface EmployeeService {

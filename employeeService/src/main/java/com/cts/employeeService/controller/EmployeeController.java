@@ -17,12 +17,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import com.cts.employeeService.entityClass.Delivarable;
-import com.cts.employeeService.entityClass.User;
+
+import com.cts.employeeService.entity.Delivarable;
+import com.cts.employeeService.entity.User;
 import com.cts.employeeService.exceptions.customExceptions.ErrorResponse;
 import com.cts.employeeService.exceptions.customExceptions.IdNotFoundException;
-import com.cts.employeeService.modelClass.DelivarableModel;
-import com.cts.employeeService.modelClass.DelivarableStatus;
+import com.cts.employeeService.model.DelivarableModel;
+import com.cts.employeeService.model.DelivarableStatus;
 import com.cts.employeeService.repository.UserRepository;
 import com.cts.employeeService.service.EmployeeService;
 

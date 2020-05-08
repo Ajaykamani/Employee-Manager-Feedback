@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cts.employeeService.entityClass.User;
-import com.cts.employeeService.modelClass.ResponseData;
+import com.cts.employeeService.entity.User;
+import com.cts.employeeService.model.ResponseData;
 import com.cts.employeeService.repository.UserRepository;
 @ControllerAdvice
 @RestController

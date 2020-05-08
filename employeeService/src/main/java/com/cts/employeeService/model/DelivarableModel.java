@@ -1,4 +1,4 @@
-package com.cts.employeeService.modelClass;
+package com.cts.employeeService.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,11 +9,8 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class DelivarableStatus {
-	
-	private Integer delivarableId;
+public class DelivarableModel {
 	private Integer EmployeeId;
 	private String projectname;
 	private String remarks;
-	
 }
