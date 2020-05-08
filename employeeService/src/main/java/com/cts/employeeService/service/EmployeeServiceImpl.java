@@ -2,6 +2,7 @@ package com.cts.employeeService.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -70,11 +71,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public ResponseEntity<List<Integer>> getEmployeeIds(Integer managerId){
 		
-		List<User> userList = this.userRepository.findBymanagerId(managerId);
-		List<Integer> data = new ArrayList<Integer>();
-		userList.stream().forEach(user->
-				data.add(user.getUserId())
-				);
+		List<Integer> data = this.userRepository.findBymanagerId(managerId).stream()
+				.map((user)->{
+					return user.getUserId();
+				}).collect(Collectors.toList());
 		return new ResponseEntity<List<Integer>>(data,HttpStatus.OK);
 		
 		

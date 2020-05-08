@@ -1,7 +1,0 @@
-package com.cts.managerService;
-
-
-@SpringBootTest
-public class ManagerServiceServiceTests {
-
-}

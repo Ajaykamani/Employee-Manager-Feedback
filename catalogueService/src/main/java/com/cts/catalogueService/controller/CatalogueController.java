@@ -92,68 +92,42 @@ public class CatalogueController {
 	// retrieve all the employees of a manager
 	@GetMapping("/getDelivarablesOrder/{managerId}")
 	public ResponseEntity<List<UserDetails>> getDelivarablesBymanagerId(@PathVariable Integer managerId){
-			List<Integer> list = this.managerProxy.getRatingsByOrder().getBody();
-			List<UserDetails> data = new ArrayList<UserDetails>();
-			list.stream().forEach(id->{
-				UserDetails userData = new UserDetails();
-				User user = this.empProxy.getDetailsByEmployeeIdAndBymanagerId(id, managerId).getBody();
-				if(user != null) {
-				userData.setUserId(user.getUserId());
-				userData.setUserName(user.getUserName());
-				userData.setRole(user.getRole());
-				userData.setManagerId(user.getManagerId());
-				data.add(userData);
-				}
-			});
-			
-			List<UserDetails> data1 = (List<UserDetails>) this.managerProxy.getRatingsByOrder().getBody().stream().map(
-					(id)->{
-						UserDetails userData = new UserDetails();
-						User user = this.empProxy.getDetailsByEmployeeIdAndBymanagerId(id, managerId).getBody();
-						if(user != null) {
-						userData.setUserId(user.getUserId());
-						userData.setUserName(user.getUserName());
-						userData.setRole(user.getRole());
-						userData.setManagerId(user.getManagerId());
-						return userData;
-						}).collect(Collectors.toList());
-					}
-			/*
+		
 			List<UserDetails> data = (List<UserDetails>) this.managerProxy.getRatingsByOrder().getBody().stream()
 					.map((id)->{
 						UserDetails userData = new UserDetails();
 						User user = this.empProxy.getDetailsByEmployeeIdAndBymanagerId(id, managerId).getBody();
-						if(user != null) {
 						userData.setUserId(user.getUserId());
 						userData.setUserName(user.getUserName());
 						userData.setRole(user.getRole());
 						userData.setManagerId(user.getManagerId());
 						return userData;
-					}).collect(Collectors.toList());
-			*/
-			
-			
-			return  new ResponseEntity<List<UserDetails>>(data1,HttpStatus.OK);
+						
+						}).collect(Collectors.toList());
+			return  new ResponseEntity<List<UserDetails>>(data,HttpStatus.OK);
 	}
 	
 	//retrieve all delivarables of an employee
 	@GetMapping("/getDelivarables/{employeeId}")
 	public ResponseEntity<List<DelivarableResponse>> getDelivarablesbyEmployeeId(@PathVariable Integer employeeId){
-		List<Delivarable> list = this.empProxy.getDelivarablesByEmployeeId(employeeId).getBody();
-		List<DelivarableResponse> response = new ArrayList<DelivarableResponse>();
-		list.stream().forEach(delivarable->{
-			DelivarableResponse data = new DelivarableResponse();
-			data.setDelivarableId(delivarable.getId());
-			data.setEmployeeId(delivarable.getEmployeeId());
-			data.setPojectName(delivarable.getPojectName());
-			data.setRemarks(delivarable.getRemarks());
-			data.setRated(delivarable.getRated());
-			data.setReviewed(delivarable.getReviewed());
-			RatingData rating = this.managerProxy.getRatingByDelivarableId(delivarable.getId()).getBody();
-			data.setRating(rating.getRating());
-			data.setReview(rating.getReview());
-			response.add(data);
-		});
+		
+		List<DelivarableResponse> response = this.empProxy.getDelivarablesByEmployeeId(employeeId).getBody().stream()
+				.map((delivarable)->{
+					DelivarableResponse data = new DelivarableResponse();
+					data.setDelivarableId(delivarable.getId());
+					data.setEmployeeId(delivarable.getEmployeeId());
+					data.setPojectName(delivarable.getPojectName());
+					data.setRemarks(delivarable.getRemarks());
+					data.setRated(delivarable.getRated());
+					data.setReviewed(delivarable.getReviewed());
+					RatingData rating = this.managerProxy.getRatingByDelivarableId(delivarable.getId()).getBody();
+					data.setRating(rating.getRating());
+					data.setReview(rating.getReview());
+					return data;
+					
+				}).collect(Collectors.toList());
+		
+		
 		return  new ResponseEntity<List<DelivarableResponse>>(response,HttpStatus.OK);
 		
 	}
