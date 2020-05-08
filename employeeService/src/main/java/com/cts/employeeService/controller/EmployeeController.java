@@ -35,6 +35,7 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeService employeeService;
 	
+	//This method saves a Delivarable
 	@PostMapping("/saveDelivarable")
 	public Delivarable saveDelivarable(@RequestBody DelivarableModel delivarableModel ) {
 		
@@ -46,6 +47,7 @@ public class EmployeeController {
 		}
 	}
 	
+	//It update the rating status when manger rates the delivarable
 	@PutMapping("/updateRatingStatus")
 	public Delivarable updatedelivarableRatingStatus(@RequestBody DelivarableStatus delivarableStatus) {
 		if(delivarableStatus.getEmployeeId()==null) {
@@ -58,6 +60,7 @@ public class EmployeeController {
 		}
 	}
 	
+	//It updates the review status when employee provides the review
 	@PutMapping("/updateReviewStatus")
 	public Delivarable updatedelivarableReviewStatus(@RequestBody DelivarableStatus delivarableStatus) {
 		if(delivarableStatus.getEmployeeId()==null) {
@@ -73,7 +76,7 @@ public class EmployeeController {
 		}
 	}
 	
-	
+	//Retrieve all the employee ids of a manager
 	@GetMapping("/employeeIds/{managerId}")
 	public ResponseEntity<List<Integer>> getEmployeeIdsBymanagerId(@PathVariable Integer managerId){
 		try {
@@ -81,7 +84,9 @@ public class EmployeeController {
 		}catch(Exception e) {
 			throw new IdNotFoundException("No employee with maganer id "+managerId+" not found");		
 		}
-		}
+	}
+	
+	//Retrieves the list of delivarables saved by employee Id
 	@GetMapping("/getDelivarables/{employeeId}")
 	public ResponseEntity<List<Delivarable>> getDelivarablesByEmployeeId(@PathVariable Integer employeeId){
 		try {
@@ -102,7 +107,7 @@ public class EmployeeController {
 		
 	}
 	
-
+	// retrieve the user details by userId And ManagerId
 	@GetMapping("/userDetails/{employeeId}/{managerId}")
 	public ResponseEntity<User> getDetailsByEmployeeIdAndBymanagerId(@PathVariable Integer employeeId,@PathVariable Integer managerId){
 		return this.employeeService.getUserByManagerId(employeeId, managerId);

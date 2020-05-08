@@ -25,21 +25,20 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Autowired
 	private DelivarableRepository delivarableRepository;
 	
+	// It saves the delivarable into table
 	@Override
 	public Delivarable saveDelivarable(DelivarableModel delivarableModel) {
-		
 		Delivarable data = new Delivarable();
 		data.setEmployeeId(delivarableModel.getEmployeeId());
 		data.setPojectName(delivarableModel.getProjectname());
 		data.setRemarks(delivarableModel.getRemarks());
 		data.setRated(false);
 		data.setReviewed(false);
-		
 		return this.delivarableRepository.save(data); 
 
 	}
 
-
+	//It updates the rating status
 	@Override
 	public Delivarable updateDelivarableRatingStatus(DelivarableStatus delivarableStatus) {
 		Delivarable data = new Delivarable();
@@ -53,7 +52,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return this.delivarableRepository.save(data);
 	}
 
-
+	//It updates the review status
 	@Override
 	public Delivarable updateDelivarableReviewStatus(DelivarableStatus delivarableStatus) {
 		Delivarable data = new Delivarable();
@@ -67,6 +66,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return this.delivarableRepository.save(data);
 	}
 	
+	//retrieves the list of employee ids by manager Id
 	@Override
 	public ResponseEntity<List<Integer>> getEmployeeIds(Integer managerId){
 		
@@ -80,7 +80,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		
 	}
 
-
+	//Retrieves the list of delivarables by employee Id
 	@Override
 	public ResponseEntity<List<Delivarable>> getDelivarablesByEmployeeId(Integer employeeId) {
 
@@ -89,6 +89,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		
 	}
 	
+	//Retrieve the user details by manager Id and employee Id
 	@Override
 	public ResponseEntity<User> getUserByManagerId(Integer employeeId, Integer managerId) {
 

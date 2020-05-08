@@ -17,6 +17,7 @@ public class RatingServiceImpl implements RatingService {
 	@Autowired
 	private RatingRepository ratingRepository;
 	
+	//It saves the rating of a delivarable
 	@Override
 	public RatingData saveRating(RatingDataModel dataModel) {
 		RatingData data = new RatingData();
@@ -25,7 +26,8 @@ public class RatingServiceImpl implements RatingService {
 		data.setRating(dataModel.getRating());
 		 return this.ratingRepository.save(data);
 	}
-
+	
+	//It update the review pf a delivarable
 	@Override
 	public RatingData updateRating(ReviewDataModel dataModel) {
 		RatingData data = new RatingData();
@@ -35,13 +37,15 @@ public class RatingServiceImpl implements RatingService {
 		data.setReview(dataModel.getReview());
 		return this.ratingRepository.save(data);
 	}
-
+	
+	//It retrueves the rating data by delivarable id
 	@Override
 	public ResponseEntity<RatingData> getBydelivarableId(Integer delivarableId) {
 		RatingData data  = this.ratingRepository.findBydelivarableId(delivarableId);
 		return new ResponseEntity<RatingData>(data,HttpStatus.OK);
 	}
 
+	//It retrieves the employee ids based on average of rating
 	@Override
 	public ResponseEntity<List<Integer>> getRatingsByOrder() {
 		List<Integer> list = this.ratingRepository.findAllemployeeId();
