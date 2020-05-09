@@ -23,4 +23,5 @@
 <fullyQualifiedTypeName name="com.cts.managerService.entityClass.RatingData"/>
 <fullyQualifiedTypeName name="com.cts.employeeService.entityClass.User"/>
 <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
+<fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 </qualifiedTypeNameHistroy>

@@ -90,12 +90,8 @@ public class RatingController {
 	//This method returns list of employee ids in descending order by avg(rating)
 	@GetMapping("/getByOrder")
 	public ResponseEntity<List<Integer>> getRatingsByOrder() throws Exception{
-		List<RatingData> r = this.ratingRepo.findAll();
-		if(r.isEmpty()) {
-			throw new Exception("No data in db");	
-		}else {
-			return this.ratingService.getRatingsByOrder();
-		}
+		return this.ratingService.getRatingsByOrder();
+		
 	}
 	
 	

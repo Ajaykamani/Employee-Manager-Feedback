@@ -96,6 +96,11 @@ public class EmployeeController {
 		}
 	}
 	
+	// retrieve the user details by userId And ManagerId
+	@GetMapping("/userDetails/{employeeId}/{managerId}")
+	public ResponseEntity<User> getDetailsByEmployeeIdAndBymanagerId(@PathVariable Integer employeeId,@PathVariable Integer managerId){
+		return this.employeeService.getUserByManagerId(employeeId, managerId);
+	}
 	
 	@ExceptionHandler 
 	public ResponseEntity<ErrorResponse> idNotFoundHandler(IdNotFoundException ex) {
@@ -107,11 +112,7 @@ public class EmployeeController {
 		
 	}
 	
-	// retrieve the user details by userId And ManagerId
-	@GetMapping("/userDetails/{employeeId}/{managerId}")
-	public ResponseEntity<User> getDetailsByEmployeeIdAndBymanagerId(@PathVariable Integer employeeId,@PathVariable Integer managerId){
-		return this.employeeService.getUserByManagerId(employeeId, managerId);
-	}
+
 	
 }
 
